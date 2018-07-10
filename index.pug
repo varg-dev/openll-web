@@ -1,0 +1,18 @@
+extends partials/index.pug
+
+
+block vars
+  - var navActive = 0
+
+block head
+  // link(rel = 'stylesheet' href = 'css/template.css')
+  // script(src = 'js/tempalte.js')
+
+block header
+
+
+block content
+  section.container
+    div.row
+      div.col
+        include:markdown-it(html plugins=['markdown-it-highlightjs']) README.md

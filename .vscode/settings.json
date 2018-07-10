@@ -1,0 +1,26 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.formatOnSave": true,
+    "[pug]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": true
+    },
+    "files.insertFinalNewline": true,
+    "editor.cursorBlinking": "solid", // saves performance
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/dist": true
+    },
+    "files.exclude": {
+        "**/.git": true, // this is a default value
+        "**/node_modules": true, // this excludes all folders 
+        "node_modules": true
+    },
+    "cSpell.language": "en",
+    "cSpell.words": [],
+    "cSpell.flagWords": [
+        "hte"
+    ],
+}

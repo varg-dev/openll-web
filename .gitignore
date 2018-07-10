@@ -1,0 +1,9 @@
+.nyc_output
+.git
+node_modules/
+_site/
+.DS_Store
+package-lock.json
+*.tgz
+*.sublime-project
+*.sublime-workspace

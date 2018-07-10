@@ -1,0 +1,19 @@
+
+doctype html
+html(lang = 'en')
+
+  block vars
+  - var navLinks = []
+  - navLinks.push({ href: '/', text: 'OpenLL API' })
+  - navLinks.push({ href: 'https://github.com/cginternals/openll', text: 'GitHub' })
+
+  include head.pug
+  body.bg-light
+
+    include navbar.pug
+
+    block header
+
+    block content
+
+    include foot.pug

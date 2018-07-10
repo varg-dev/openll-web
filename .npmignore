@@ -1,0 +1,14 @@
+.vscode/
+.git/
+.gitignore
+.nycrc
+.nyc_output
+
+_site/
+
+template.pug
+
+copy.js
+pugconfig.js
+
+*.tgz

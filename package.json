@@ -1,0 +1,41 @@
+{
+    "name": "openll-website",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Website for openll.org",
+    "author": "CG Internals",
+    "homepage": "https://cginternals.com",
+    "bugs": {
+        "email": "contact@cginternals.com",
+        "url": "https://gitlab.cginternals.com/web/openll/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.cginternals.com/web/openll.git"
+    },
+    "contributors": [
+        {
+            "name": "Daniel Limberger",
+            "email": "daniel.limberger@cginternals.com"
+        },
+        {
+            "name": "Willy Scheibel",
+            "email": "willy.scheibel@cginternals.com"
+        }
+    ],
+    "devDependencies": {
+        "glob": "~7.1.2",
+        "http-server": "~0.11.1",
+        "jstransformer-markdown-it": "~2.0.0",
+        "markdown-it-highlightjs": "~3.0.0",
+        "pug": "~2.0.1",
+        "query-string": "~5.1.0",
+        "rimraf": "~2.6.2"
+    },
+    "scripts": {
+        "build": "node pugconfig.js",
+        "build-watch": "node pugconfig.js --watch",
+        "cleanup": "rimraf ./_site",
+        "server": "http-server ./_site -a localhost -p 4000"
+    }
+}

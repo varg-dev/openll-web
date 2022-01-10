@@ -33,6 +33,9 @@ jobs:
         working-directory: src
       - name: Copy website
         run: cp -r src/_site/* deploy
+      - name: Create CNAME
+        run: echo "openll.org" > CNAME
+        working-directory: deploy
       - name: Commit result
         run: |
           git config user.email "${{ github.event.pusher.email }}"
